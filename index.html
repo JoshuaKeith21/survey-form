@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.body {
+font-family: 'Roboto Condensed', sans-serif;
+line-height: 1.4;
+background-color: #D7DCDD;
+width: 500px;
+margin: auto;
+}
+
+.form {
+background: rgb(147,5,5,0.2);
+padding: 2.5rem 2.5rem;
+border-radius: 2rem;
+width: 500px;
+margin: auto;
+}
+
+.submit-button{
+width: 100%;
+padding: 0.75rem;
+background: red;
+color: white;
+border-radius: 2px;
+cursor: pointers;
+}
+
+.input-headings{
+margin: 0 auto 1.25rem auto;
+padding: 0.25rem;
+
+}
+
+.form-inputs {
+display: block;
+width: 90%;
+height: 2rem;
+padding: 0.25rem 0.75rem;
+background-color: #fff;
+border: 1px solid #cedida;
+border-radius: 0.25rem;
+}
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+<head>
+
+  <h1 id="title"> Political Alignment Survery
+  </h1>
+</head>
+
+<body class="body">
+  <p id="description">Fill in your political and policy preferences below
+  </p>
+    <form id="survey-form" class="form">
+
+    <div class="input-headings">
+
+      <label for="name" id="name-label"> Name </label>
+        <input id="name" type="text" name="name" placeholder="Enter name" class="form-inputs" required>
+        </input>
+        <br>
+
+      <label for="email" id="email-label"> Email </label>
+        <input id="email" type="email" name="email" placeholder="Enter email" class="form-inputs" required>
+        </input>
+        <br>
+
+      <label for="number" id="number"> Age </label>
+        <input id="number" type="number" name="number" Placeholder="18" min="18" max="100" class="form-inputs" required>
+        </input>
+      <br>
+
+      <label for="dropdown" id="party">Select party</label>
+        <select id="dropdown" class="form-inputs">
+          <option value="Republican"> Republican</option>
+          <option value="Democrat"> Democrat</option>
+          <option value="Libertarian"> Libertarian</option>
+          <option value="Green_Party"> Green Party</option>
+          <option value="Independent"> independent</option>
+        </select>
+
+
+        <br>
+        <br>
+
+        <label for="Issue" id="issue_label"><b>Which issue is most important to you?</b></label>
+        <br>
+
+          <input id="issue_label" type="radio" id="coronavirus" name="issue" value="coronavirus">
+            <label for="issue">coronavirus</label>
+            <br>
+
+
+            <input id="issue_label" type="radio" id="health_care" name="issue" value="Health_care">
+              <label for="issue">health care</label>
+              <br>
+
+            <input id="issue_label" type="radio" id="economy" name="issue" value="economy">
+                <label for="issue">economy</label>
+                <br>
+
+            <input id="issue_label" type="radio" id="race_tensions" name="issue" value="racial_tensions">
+                  <label for="issue">racial tensions</label>
+                  <br>
+
+            <input id="issue_label" type="radio" id="abortion" name="issue" value="abortion">
+                    <label for="issue">abortion</label>
+                    <br>
+                    <br>
+
+            <label for="news"><b>Where do you recieve news information?<br>Select all that apply.</b></label>
+            <br>
+
+
+              <input id="checkbox" type="checkbox" name="news" value="Youtube">
+                  <label for="checkbox"> Youtube </label>
+                  <br>
+
+              <input id="checkbox" type="checkbox" name="news" value="social_media">
+                <label for="checkbox"> social media </label>
+                <br>
+
+                <input id="checkbox" type="checkbox" name="news" value="newspaper">
+                    <label for="checkbox"> newspaper </label>
+                    <br>
+
+                <input id="checkbox" type="checkbox" name="news" value="tv">
+                  <label for="checkbox"> Tv </label>
+                  <br>
+
+                <input id="checkbox" type="checkbox" name="news" value="other">
+                  <label for="checkbox"> other </label>
+                  <br>
+                  <br>
+
+                <label id="textarea">Additional Comments</label>
+                <br>
+                <textarea id="textarea" name="instructions" rows="5" cols="40">
+
+                </textarea>
+                <br>
+
+                <input id="submit" type="submit" value="submit answers" class="submit-button">
+
+
+
+
+
+              </div>
+
+    </form>
+</body>
+
+
+</html>
